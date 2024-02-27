@@ -22,7 +22,64 @@ export class QAComponent {
   @Input() desc3:any;
   @Input() color:any;
   listquest:any[]=['When you have a day all to yourself, what does your ideal day look like?','In a bustling social event, what role do you find yourself naturally gravitating towards?','How do you typically prepare for a new experience or journey?','When reflecting on a past event, what stands out to you the most - the specific details or the overall meaning?','When offering support to a friend, what is your instinctive response?','Reflecting on a recent decision, what was the primary influence on your choice - logic or the impact on others?','How do you adapt to changes in your daily routine or plans?','In a team setting, what is your approach to completing tasks and reaching goals?']
-  
+  listpersonality:any[]=[
+    'Idealism',
+    'Curiosity',
+    'Loyalty to values and people',
+    'Sensitivity',
+    'Warm-heartedness',
+    'Empathy',
+    'Sociability',
+    'Inspiration'
+  ];
+  listbehavior:any[]=[
+    'Seriousness',
+    'Thoroughness',
+    'Dependability',
+    'Practicality',
+    'Realism',
+    'Logical decision-making',
+    'Orderliness',
+    'Organizational values',
+    'Tradition and loyalty',
+    'Friendliness',
+    'Responsibility',
+    'Conscientiousness',
+    'Commitment',
+    'Accuracy',
+    'Values meaning',
+    'Connections',
+    'Relationships',
+    'Organization',
+    'Decisiveness',
+    'Originality',
+    'Drive for ideas and achievements',
+    'Analytical',
+    'Logical',
+    'High standards',
+    'Independence',
+    'Skepticism',
+    'Tolerance',
+    'Flexibility',
+    'Observational skills',
+    'Critical thinking',
+    'Spontaneity',
+    'Action orientation',
+    'Collaborative spirit',
+    'Common sense',
+    'Logical thinking',
+    'Forcefulness',
+    'Determination',
+    'Cooperation',
+    'Attention to small details',
+    'Providing',
+    'Contributing',
+    'Appreciation-seeking'
+  ];
+  listtone:any[]=[
+    'Warmth',
+    'Enjoyment of material comforts'
+  ];
   @Output() output:EventEmitter<string>= new EventEmitter<string>();
  reponse1:string;
  question:string=this.listquest[0];
