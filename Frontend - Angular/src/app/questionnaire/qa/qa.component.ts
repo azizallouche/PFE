@@ -1,6 +1,7 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {LocalstorageService} from "../../services/localstorage.service";
 
+import {LocalstorageService} from "../../services/localstorage.service";
+import {QuestionnaireService} from "../../services/questionnaire.service";
 @Component({
   selector: 'app-qa',
   templateUrl: './qa.component.html',
@@ -80,34 +81,139 @@ export class QAComponent {
     'Warmth',
     'Enjoyment of material comforts'
   ];
+  baseurl:string="http://localhost:8000/VM/";
   @Output() output:EventEmitter<string>= new EventEmitter<string>();
  reponse1:string;
  question:string=this.listquest[0];
  questnumber:number=0;
  done:boolean=false;
  width:number=0;
-
- constructor() {
-
- }
+ listiter:any=[];
+listelem:any=[];
+vari:any;
+ result:any;
+ selectedColumns: { [key: string]: boolean } = {};
+ constructor(private sessionStorage:LocalstorageService,private qService:QuestionnaireService) {
+}
  getReponse1(){
-   console.log(this.reponse1)
+   
    this.output.emit(this.reponse1);
-   var textarea = document.getElementById("reponse1") as HTMLTextAreaElement;
-   if (textarea) {
-     textarea.value = '';
-   }
-   this.width+=12.5;
-   this.incrementquestion();
-   if(this.questnumber==8){
-      this.done=true;
-    }
-   }
-   incrementquestion(){
-   this.questnumber++;
-   this.question=this.listquest[this.questnumber];
+   const selectedColumnss = Object.keys(this.selectedColumns).filter(column => this.selectedColumns[column]);
+   console.log('Selected Columns:', selectedColumnss);
+   
+   this.done=true;
+   this.valid=true;
+   this.result={
+    "variables": this.selectedColumns,
+    
+  }
+   this.qService.sendData(JSON.stringify(this.result),this.baseurl).subscribe(
+    (response) => {
+       console.log(response);
+       console.log(response.length % 4)
+       this.vari=response.length %4;
+       console.log(this.vari);
+       let green=0 ;
+       let yellow=0 ;
+       let bleu =0;
+       let red =0;
+       let ii=0
+       let num = Math.floor(response.length / 4);
+       let iter= num;
+       if((response.length % 4) !=0){
+        iter+=1;
+       }
+       
+        for (let j = 0; j < iter; j++) {
+          this.listiter.push(j);
 
-   }
+        }
+       let jj =0;
+       
+       console.log(num)
+       if((response.length %4)==0){
+        green=num;
+        yellow=num;
+        bleu=num;
+        red=num;
+
+       }else if((response.length %4)==1){
+        green=num+1;
+        yellow=num;
+        bleu=num;
+        red=num;
+
+       }else if((response.length %4)==2){
+        green=num+1;
+        yellow=num+1;
+        bleu=num;
+        red=num;
+
+       }else if((response.length %4)==3){
+        green=num+1;
+        yellow=num+1;
+        bleu=num+1;
+        red=num;
+       }
+       
+        for (let i = 0; i < num+1; i++) {
+          
+
+              
+              if((response.length %4)==0){
+                this.listelem.push(response[i]);
+                this.listelem.push(response[i+green]);
+                this.listelem.push(response[i+bleu+green]);
+                this.listelem.push(response[i+yellow+bleu+green]);
+               }else if((response.length %4)==1){
+                if(i==num){
+                  this.listelem.push(response[i]);
+                }
+                else{
+                  this.listelem.push(response[i]);
+                  this.listelem.push(response[i+green]);
+                  this.listelem.push(response[i+bleu+green]);
+                  this.listelem.push(response[i+yellow+bleu+green]);
+                }
+                
+               }else if((response.length %4)==2){
+                if(i==num){
+                  this.listelem.push(response[i]);
+                  this.listelem.push(response[i+green]);
+                }
+                else{
+                  this.listelem.push(response[i]);
+                  this.listelem.push(response[i+green]);
+                  this.listelem.push(response[i+bleu+green]);
+                  this.listelem.push(response[i+yellow+bleu+green]);
+                }
+                
+               }else if((response.length %4)==3){
+                if(i==num){
+                  this.listelem.push(response[i]);
+                  this.listelem.push(response[i+green]);
+                  this.listelem.push(response[i+bleu+green]);
+                }
+                else{
+                  this.listelem.push(response[i]);
+                  this.listelem.push(response[i+green]);
+                  this.listelem.push(response[i+bleu+green]);
+                  this.listelem.push(response[i+yellow+bleu+green]);
+                }
+                
+               }
+            
+            
+            
+          }
+       console.log(this.listelem);
+       
+    },
+    (error) => {
+      console.error('Error communicating with backend:', error);
+    }
+  );
+ }
 
 
 

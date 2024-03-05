@@ -22,7 +22,7 @@
     "element-angular": "^0.7.6",
     "element-plus": "^2.5.5",
     "element-ui": "^2.15.14",
-    "flowbite": "^2.2.1",
+    "flowbite": "^2.3.0",
     "jquery": "^3.7.1",
     "ngx-webstorage": "^13.0.1",
     "rxjs": "~7.8.0",

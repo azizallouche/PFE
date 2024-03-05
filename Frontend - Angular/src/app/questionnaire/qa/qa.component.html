@@ -20,7 +20,7 @@
 				
 				<fieldset class="scrollable-div">
     
-					<input *ngFor="let attribute of listpersonality" type="checkbox" class="chip bounce" s role="switch" value="{{attribute}}" aria-label="Pear" />
+					<input *ngFor="let attribute of listpersonality" type="checkbox" class="chip bounce" s role="switch" value="{{attribute}}" aria-label="Pear" [(ngModel)]="selectedColumns[attribute]"/>
 	
 				</fieldset>
 			</div>
@@ -37,7 +37,7 @@
 				
 				<fieldset class="scrollable-div">
 
-					<input *ngFor="let attribute of listbehavior" type="checkbox" class="chip bounce" role="switch" value="{{attribute}}" aria-label="Pear" style="--color:#fa3"/>
+					<input *ngFor="let attribute of listbehavior" type="checkbox" class="chip bounce" role="switch" value="{{attribute}}" aria-label="Pear" style="--color:#fa3" [(ngModel)]="selectedColumns[attribute]"/>
 					
 				</fieldset>
 			</div>
@@ -54,14 +54,17 @@
 				
 				<fieldset class="scrollable-div">
 
-					<input *ngFor="let attribute of listtone" type="checkbox" class="chip bounce" role="switch" value="{{attribute}}" aria-label="Pear" style="--color:#f88"/>
+					<input *ngFor="let attribute of listtone" type="checkbox" class="chip bounce" role="switch" value="{{attribute}}" aria-label="Pear" style="--color:#f88" [(ngModel)]="selectedColumns[attribute]" />
 					
 
 				</fieldset>
 			</div>
 		</div>
 	</div>
+  
+ 
 </div>
+ <button type="button" (click)="getReponse1()" class="btn btn-primary" *ngIf="done==false" style="margin-left:1500px; margin-top: 10px;width: 100px;"><b>Next</b></button>
 
 
 <div class="blog-slider" style="margin-top:40px;height:550px;" *ngIf="done==true && valid==false">
@@ -97,37 +100,22 @@
 
       <p></p>
       <div style="height: 150px;">
-        <h3 style="margin-top:20px;margin-left:15px;">Personality: </h3>
+        <h3 style="margin-top:20px;margin-left:15px;">Result: </h3>
         </div>
         
          <div>
           
-            <div ><img class="h-auto max-w-full" src="assets/personalities/{{personality}}.png" alt="image description" ></div>
+            <div >
+            </div>
             
           
           
          </div>
       </div>
 
-    <div style="margin-left:80px;margin-top: 35px;"  >
-      <div class="flex-wrapper">
-        <div class="single-chart">
-          <svg viewBox="0 0 36 36" class="circular-chart orange">
-            <path class="circle-bg"
-              d="M18 2.0845
-                a 15.9155 15.9155 0 0 1 0 31.831
-                a 15.9155 15.9155 0 0 1 0 -31.831"
-            />
-            <path class="circle"
-            [attr.stroke-dasharray]="E_I + ', 100'"
-              d="M18 2.0845
-                a 15.9155 15.9155 0 0 1 0 31.831
-                a 15.9155 15.9155 0 0 1 0 -31.831"
-            />
-            <text x="18" y="20.35" class="percentage">{{E_I}}%</text>
-          </svg>
-        </div>
-        
+    <div style="margin-left:80px;margin-top: 35px;" >
+      <div *ngFor="let iterr of listiter">
+      <div class="flex-wrapper"  >
         <div class="single-chart">
           <svg viewBox="0 0 36 36" class="circular-chart green">
             <path class="circle-bg"
@@ -136,60 +124,73 @@
                 a 15.9155 15.9155 0 0 1 0 -31.831"
             />
             <path class="circle"
-            [attr.stroke-dasharray]="S_N + ', 100'"
+            [attr.stroke-dasharray]="listelem[iterr][1] + ', 100'"
               d="M18 2.0845
                 a 15.9155 15.9155 0 0 1 0 31.831
                 a 15.9155 15.9155 0 0 1 0 -31.831"
             />
-            <text x="18" y="20.35" class="percentage">{{S_N}}%</text>
+            <text x="18" y="20.35" class="percentage">{{listelem[iterr*4][1]}}%</text>
+          </svg>
+        </div>
+        
+        <div class="single-chart" *ngIf="!((vari<=1 && vari!=0) && iterr +1== listiter.length)">
+          
+          <svg viewBox="0 0 36 36" class="circular-chart blue" >
+            <path class="circle-bg"
+              d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path class="circle"
+            [attr.stroke-dasharray]="listelem[iterr*4+1][1] + ', 100'"
+              d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text x="18" y="20.35" class="percentage">{{listelem[iterr*4+1][1]}}%</text>
           </svg>
         </div>
       
-        <div class="single-chart">
-          <svg viewBox="0 0 36 36" class="circular-chart blue">
+        <div class="single-chart" *ngIf="!((vari<=2 && vari!=0) && iterr +1== listiter.length)">
+          <svg viewBox="0 0 36 36" class="circular-chart orange" >
             <path class="circle-bg"
               d="M18 2.0845
                 a 15.9155 15.9155 0 0 1 0 31.831
                 a 15.9155 15.9155 0 0 1 0 -31.831"
             />
             <path class="circle"
-            [attr.stroke-dasharray]="T_F + ', 100'"
+            [attr.stroke-dasharray]="listelem[iterr*4+2][1] + ', 100'"
               d="M18 2.0845
                 a 15.9155 15.9155 0 0 1 0 31.831
                 a 15.9155 15.9155 0 0 1 0 -31.831"
             />
-            <text x="18" y="20.35" class="percentage">{{T_F}}%</text>
+            <text x="18" y="20.35" class="percentage">{{listelem[iterr*4+2][1]}}%</text>
           </svg>
         </div>
-        <div class="single-chart">
-          <svg viewBox="0 0 36 36" class="circular-chart red">
+        <div class="single-chart" *ngIf="!((vari<=3 && vari!=0) && iterr +1== listiter.length)">
+          <svg viewBox="0 0 36 36" class="circular-chart red"  >
             <path class="circle-bg"
               d="M18 2.0845
                 a 15.9155 15.9155 0 0 1 0 31.831
                 a 15.9155 15.9155 0 0 1 0 -31.831"
             />
             <path class="circle"
-            [attr.stroke-dasharray]="J_P + ', 100'"
+            [attr.stroke-dasharray]="listelem[iterr*4+3][1] + ', 100'"
               d="M18 2.0845
                 a 15.9155 15.9155 0 0 1 0 31.831
                 a 15.9155 15.9155 0 0 1 0 -31.831"
             />
-            <text x="18" y="20.35" class="percentage">{{J_P}}%</text>
+            <text x="18" y="20.35" class="percentage">{{listelem[iterr*4+3][1]}}%</text>
           </svg>
         </div>
       </div>
       <div class="flex-wrapper">
-        <div class="single-chart"><b style="font-size: large; color: rgb(255, 159, 0); margin-left: 25px;">{{EI_type}}</b></div>
-        <div class="single-chart"><b style="font-size: large; color: green; margin-left: 25px;">{{SN_type}}</b></div>
-        <div class="single-chart"><b style="font-size: large; color: #3c9ee5; margin-left: 25px;">{{TF_type}}</b></div>
-        <div class="single-chart"><b style="font-size: large; color:lightcoral; margin-left: 25px;">{{JP_type}}</b></div>
-      </div>
-      <div class="max-w-lg text-xl font-semibold leading-normal text-gray-900 " style="margin-top: 40px;">
-       <b style="color:{{color}};"> {{desc2}} :     </b> <b style="margin-left: 20px; color: rgb(90, 90, 90);">{{desc1}}</b>
-      </div>
-      <div style="margin-top: 40px;">
-        <div class="max-w-lg text-xl font-semibold leading-normal text-gray-900 " style="margin-top: 10px;" *ngFor="let item of desc3;"><b style="color: #666;">{{item}}</b></div>
-      </div>
+        <div class="single-chart" ><b style="font-size: large; color: green; margin-left: 45px;">{{listelem[iterr*4][0]}} </b></div>
+        <div class="single-chart" *ngIf="!(listelem%4>1 && iterr+1==listiter.length)"><b style="font-size: large; color: #3c9ee5; margin-left: 45px;">{{listelem[iterr*4+1][0]}} </b></div>
+        <div class="single-chart" *ngIf="!(listelem%4>2 && iterr+1==listiter.length)"><b style="font-size: large; color: rgb(255, 159, 0); margin-left: 45px;">{{listelem[iterr*4+2][0]}}</b></div>
+        <div class="single-chart" *ngIf="!(listelem%4>3 && iterr+1==listiter.length)"><b style="font-size: large; color:lightcoral; margin-left: 45px;">{{listelem[iterr*4+3][0]}}</b></div>
+      </div></div>
+      
       
 
      

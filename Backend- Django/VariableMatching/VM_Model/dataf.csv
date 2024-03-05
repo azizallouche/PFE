@@ -1,0 +1,317 @@
+Variable;Connected_to;Weight
+seriousness;ISFJ;0.0851354
+seriousness;ENTJ;0.0742427
+seriousness;ESTJ;0.1120
+seriousness;ISTJ;0.2133334
+seriousness;INTJ;0.098609
+thoroughness;ISFJ;0.0851354
+thoroughness;ENTJ;0.0742427
+thoroughness;ESTJ;0.1120
+thoroughness;ISTJ;0.2133334
+thoroughness;INTJ;0.098609
+dependability;ISFJ;0.0851354
+dependability;ENTJ;0.0742427
+dependability;ESTJ;0.1120
+dependability;ISTJ;0.2133334
+dependability;INTJ;0.098609
+practicality;ISFJ;0.0486488
+practicality;ENTJ;0.0424244
+practicality;ESTJ;0.0640
+practicality;ISTJ;0.1219048
+practicality;INTJ;0.056348
+realism;ISFJ;0.0486488
+realism;ENTJ;0.0424244
+realism;ESTJ;0.0640
+realism;ISTJ;0.1219048
+realism;INTJ;0.056348
+logical decision-making;ISFJ;0.0486488
+logical decision-making;ENTJ;0.0424244
+logical decision-making;ESTJ;0.0640
+logical decision-making;ISTJ;0.1219048
+logical decision-making;INTJ;0.056348
+orderliness;ISFJ;0.0851354
+orderliness;ENTJ;0.0742427
+orderliness;ESTJ;0.1120
+orderliness;ISTJ;0.2133334
+orderliness;INTJ;0.098609
+organizational values;ISFJ;0.0851354
+organizational values;ENTJ;0.0742427
+organizational values;ESTJ;0.1120
+organizational values;ISTJ;0.2133334
+organizational values;INTJ;0.098609
+tradition and loyalty;ISFJ;0.0851354
+tradition and loyalty;ENTJ;0.0742427
+tradition and loyalty;ESTJ;0.1120
+tradition and loyalty;ISTJ;0.2133334
+tradition and loyalty;INTJ;0.098609
+friendliness;ENFP;0.0970585
+friendliness;ENFJ;0.2906778
+friendliness;ESFJ;0.4333336
+friendliness;ISFJ;0.1797299
+friendliness;ESFP;0.0921053
+responsibility;ENFP;0.0970585
+responsibility;ENFJ;0.2906778
+responsibility;ESFJ;0.4333336
+responsibility;ISFJ;0.1797299
+responsibility;ESFP;0.0921053
+conscientiousness;ENFP;0.0970585
+conscientiousness;ENFJ;0.2906778
+conscientiousness;ESFJ;0.4333336
+conscientiousness;ISFJ;0.1797299
+conscientiousness;ESFP;0.0921053
+commitment;ENFP;0.055462
+commitment;ENFJ;0.1661016
+commitment;ESFJ;0.2476192
+commitment;ISFJ;0.1027028
+commitment;ESFP;0.0526316
+thoroughness;ENFP;0.055462
+thoroughness;ENFJ;0.1661016
+thoroughness;ESFJ;0.2476192
+thoroughness;ISFJ;0.1027028
+thoroughness;ESFP;0.0526316
+accuracy;ENFP;0.055462
+accuracy;ENFJ;0.1661016
+accuracy;ESFJ;0.2476192
+accuracy;ISFJ;0.1027028
+accuracy;ESFP;0.0526316
+values meaning;ENFP;0.0970585
+values meaning;ENFJ;0.2906778
+values meaning;ESFJ;0.4333336
+values meaning;ISFJ;0.1797299
+values meaning;ESFP;0.0921053
+connections;ENFP;0.0970585
+connections;ENFJ;0.2906778
+connections;ESFJ;0.4333336
+connections;ISFJ;0.1797299
+connections;ESFP;0.0921053
+relationships;ENFP;0.0970585
+relationships;ENFJ;0.2906778
+relationships;ESFJ;0.4333336
+relationships;ISFJ;0.1797299
+relationships;ESFP;0.0921053
+organization;ESTJ;0.1280
+organization;ESFJ;0.00761904
+organization;ENTJ;0.0757576
+organization;ESTP;0.0677968
+organization;ENFJ;0.0711864
+organization;ENTP;0.0464516
+decisiveness;ESTJ;0.1280
+decisiveness;ESFJ;0.00761904
+decisiveness;ENTJ;0.0757576
+decisiveness;ESTP;0.0677968
+decisiveness;ENFJ;0.0711864
+decisiveness;ENTP;0.0464516
+originality;ESTJ;0.1280
+originality;ESFJ;0.00761904
+originality;ENTJ;0.0757576
+originality;ESTP;0.0677968
+originality;ENFJ;0.0711864
+originality;ENTP;0.0464516
+drive for ideas and achievements;ESTJ;0.2240
+drive for ideas and achievements;ESFJ;0.1333332
+drive for ideas and achievements;ENTJ;0.1325758
+drive for ideas and achievements;ESTP;0.1186444
+drive for ideas and achievements;ENFJ;0.1245762
+drive for ideas and achievements;ENTP;0.0812903
+commitment;ESTJ;0.2240
+commitment;ESFJ;0.1333332
+commitment;ENTJ;0.1325758
+commitment;ESTP;0.1186444
+commitment;ENFJ;0.1245762
+commitment;ENTP;0.0812903
+sensitivity;INFJ;0.1770732
+sensitivity;ISFJ;0.054054
+sensitivity;ISFP;0.1387096
+sensitivity;ENFJ;0.0644068
+sensitivity;ENFP;0.1008404
+sensitivity;INFP;0.2263916
+idealism;INFJ;0.1770732
+idealism;ISFJ;0.054054
+idealism;ISFP;0.1387096
+idealism;ENFJ;0.0644068
+idealism;ENFP;0.1008404
+idealism;INFP;0.2263916
+curiosity;INFJ;0.1770732
+curiosity;ISFJ;0.054054
+curiosity;ISFP;0.1387096
+curiosity;ENFJ;0.0644068
+curiosity;ENFP;0.1008404
+curiosity;INFP;0.2263916
+loyalty to values and people;INFJ;0.3098781
+loyalty to values and people;ISFJ;0.0945945
+loyalty to values and people;ISFP;0.2427418
+loyalty to values and people;ENFJ;0.1127119
+loyalty to values and people;ENFP;0.1764707
+loyalty to values and people;INFP;0.3961853
+sees possibilities;INFJ;0.3098781
+sees possibilities;ISFJ;0.0945945
+sees possibilities;ISFP;0.2427418
+sees possibilities;ENFJ;0.1127119
+sees possibilities;ENFP;0.1764707
+sees possibilities;INFP;0.3961853
+analytical;INFJ;0.1007314
+analytical;INTP;0.5177683
+analytical;ISFP;0.0733873
+analytical;ISTJ;0.1999998
+analytical;ISTP;0.2875971
+analytical;INFP;0.090279
+analytical;INTJ;0.433391
+logical;INFJ;0.1007314
+logical;INTP;0.5177683
+logical;ISFP;0.0733873
+logical;ISTJ;0.1999998
+logical;ISTP;0.2875971
+logical;INFP;0.090279
+logical;INTJ;0.433391
+high standards;INFJ;0.1007314
+high standards;INTP;0.5177683
+high standards;ISFP;0.0733873
+high standards;ISTJ;0.1999998
+high standards;ISTP;0.2875971
+high standards;INFP;0.090279
+high standards;INFJ;0.1007314
+independence;INTP;0.5177683
+independence;ISFP;0.0733873
+independence;ISTJ;0.1999998
+independence;ISTP;0.2875971
+independence;INFP;0.090279
+independence;INTJ;0.433391
+independence;INFJ;0.1007314
+skepticism;INFJ;0.1007314
+skepticism;INTP;0.5177683
+skepticism;ISFP;0.0733873
+skepticism;ISTJ;0.1999998
+skepticism;ISTP;0.2875971
+skepticism;INFP;0.090279
+skepticism;INTJ;0.433391
+tolerance;ISTJ;0.2
+tolerance;ISFJ;0.189189
+tolerance;ESTP;0.0830508
+tolerance;ISTP;0.0868217
+flexibility;ISTJ;0.2
+flexibility;ISFJ;0.189189
+flexibility;ESTP;0.0830508
+flexibility;ISTP;0.0868217
+observational skills;ISTJ;0.2
+observational skills;ISFJ;0.189189
+observational skills;ESTP;0.0830508
+observational skills;ISTP;0.0868217
+skepticism;ISTJ;0.1142856
+skepticism;ISFJ;0.108108
+skepticism;ESTP;0.0474576
+skepticism;ISTP;0.0496124
+critical thinking;ISTJ;0.1142856
+critical thinking;ISFJ;0.108108
+critical thinking;ESTP;0.0474576
+critical thinking;ISTP;0.0496124
+flexibility;ENFP;0.2735292
+flexibility;ENTP;0.3274194
+flexibility;ESFP;0.3131576
+flexibility;ESTP;0.2728817
+flexibility;ISTP;0.0813953
+spontaneity;ENFP;0.2735292
+spontaneity;ENTP;0.3274194
+spontaneity;ESFP;0.3131576
+spontaneity;ESTP;0.2728817
+spontaneity;ISTP;0.0813953
+action orientation;ENFP;0.2735292
+action orientation;ENTP;0.3274194
+action orientation;ESFP;0.3131576
+action orientation;ESTP;0.2728817
+action orientation;ISTP;0.0813953
+enjoyment of material comforts;ENFP;0.2735292
+enjoyment of material comforts;ENTP;0.3274194
+enjoyment of material comforts;ESFP;0.3131576
+enjoyment of material comforts;ESTP;0.2728817
+enjoyment of material comforts;ISTP;0.0813953
+collaborative spirit;ENFP;0.2735292
+collaborative spirit;ENTP;0.3274194
+collaborative spirit;ESFP;0.3131576
+collaborative spirit;ESTP;0.2728817
+collaborative spirit;ISTP;0.0813953
+realism;ENFP;0.1563024
+realism;ENTP;0.1870968
+realism;ESFP;0.1789472
+realism;ESTP;0.1559324
+realism;ISTP;0.0465116
+common sense;ENFP;0.1563024
+common sense;ENTP;0.1870968
+common sense;ESFP;0.1789472
+common sense;ESTP;0.1559324
+common sense;ISTP;0.0465116
+logical thinking;ENTJ;0.3234847
+logical thinking;ENTP;0.1038709
+logical thinking;ESTJ;0.28
+logical thinking;ESTP;0.1898302
+forcefulness;ENTJ;0.3234847
+forcefulness;ENTP;0.1038709
+forcefulness;ESTJ;0.28
+forcefulness;ESTP;0.1898302
+determination;ENTJ;0.3234847
+determination;ENTP;0.1038709
+determination;ESTJ;0.28
+determination;ESTP;0.1898302
+warm-heartedness;ENTJ;0.3234847
+warm-heartedness;ENTP;0.1038709
+warm-heartedness;ESTJ;0.28
+warm-heartedness;ESTP;0.1898302
+cooperation;ENTJ;0.3234847
+cooperation;ENTP;0.1038709
+cooperation;ESTJ;0.28
+cooperation;ESTP;0.1898302
+loyalty;ENTJ;0.3234847
+loyalty;ENTP;0.1038709
+loyalty;ESTJ;0.28
+loyalty;ESTP;0.1898302
+attention to small details;ENTJ;0.3234847
+attention to small details;ENTP;0.1038709
+attention to small details;ESTJ;0.28
+attention to small details;ESTP;0.1898302
+providing;INFP;0.06433
+providing;ISFJ;0.0864864
+providing;ISFP;0.135484
+providing;ESFP;0.0842104
+providing;ISTP;0.0651164
+providing;INFJ;0.045366
+contributing;INFP;0.06433
+contributing;ISFJ;0.0864864
+contributing;ISFP;0.135484
+contributing;ESFP;0.0842104
+contributing;ISTP;0.0651164
+contributing;INFJ;0.045366
+appreciation-seeking;INFP;0.06433
+appreciation-seeking;ISFJ;0.0864864
+appreciation-seeking;ISFP;0.135484
+appreciation-seeking;ESFP;0.0842104
+appreciation-seeking;ISTP;0.0651164
+appreciation-seeking;INFJ;0.045366
+warmth;INFP;0.06433
+warmth;ISFJ;0.0864864
+warmth;ISFP;0.135484
+warmth;ESFP;0.0842104
+warmth;ISTP;0.0651164
+warmth;INFJ;0.045366
+empathy;INFP;0.06433
+empathy;ISFJ;0.0864864
+empathy;ISFP;0.135484
+empathy;ESFP;0.0842104
+empathy;ISTP;0.0651164
+empathy;INFJ;0.045366
+responsibility;INFP;0.06433
+responsibility;ISFJ;0.0864864
+responsibility;ISFP;0.135484
+responsibility;ESFP;0.0842104
+responsibility;ISTP;0.0651164
+responsibility;INFJ;0.045366
+sociability;INFP;0.1125775
+sociability;ISFJ;0.1513512
+sociability;ISFP;0.237097
+sociability;ESFP;0.1473682
+sociability;ISTP;0.1139537
+sociability;INFJ;0.0793905
+inspiration;INFP;0.1125775
+inspiration;ISFJ;0.1513512
+inspiration;ISFP;0.237097
+inspiration;ESFP;0.1473682
+inspiration;ISTP;0.1139537
+inspiration;INFJ;0.0793905
