@@ -1,0 +1,153 @@
+<body style="height: 100%;">
+    <img src="assets/img/logo.png" alt="Description of the image" width="180" height="350" style="margin-left: 20px;padding-top: 10px;">
+<div class="container" id="container" >
+	<div class="form-container sign-up-container">
+		<form #signupForm="ngForm" (submit)="register()">
+			<h1>Create Account</h1>
+			
+			<span>or use your email for registration</span>
+        <br/> 
+        <div style="font-size:medium;color: red;">{{this.exist}}</div>
+        <br/>
+    <p-floatLabel>
+            <input type="text" style="width: 450px; border-radius: 8px; " (input)="checkUsername()" pInputText [(ngModel)]="registerUsername" name="registerUsername" #signupUsernameInput="ngModel" minlength="4" required  [ngClass]="{'invalid-input': usernameTaken ||( signupUsernameInput.invalid && ( signupUsernameInput.dirty || signupUsernameInput.touched ))}">
+            <label for="username">Username</label>
+        </p-floatLabel>
+            <!-- Display error message if username is invalid -->
+    <div *ngIf="usernameTaken|| (signupUsernameInput.invalid && (signupUsernameInput.dirty || signupUsernameInput.touched))">
+        <div style="font-size: small;color: red;" *ngIf="signupUsernameInput.errors?.['required']"  style="font-size: small;color: red;">
+            Username is required.
+        </div>
+        <div style="font-size: small;color: red;" *ngIf="signupUsernameInput.errors?.['minlength']"  style="font-size: small;color: red;">
+            Username must be at least 4 characters long.
+        </div>
+        <div style="font-size: small;color: red;"   *ngIf="usernameTaken">
+            Username is already taken.
+        </div>
+    </div>
+  <br/>
+
+    <div class="input-group">
+        <!-- Small Input 1 -->
+    <p-floatLabel>
+        <input type="text" id="registerFirstname" name="registerFirstname" pInputText [(ngModel)]="registerFirstname" 
+               #firstnameInput="ngModel" required style="width: 220px; margin-left: 20px; margin-right: 10px;border-radius: 8px; "
+               [ngClass]="{'invalid-input': firstnameInput.invalid && (firstnameInput.dirty || firstnameInput.touched)}">
+               <label for="name" style="margin-left: 20px;">First Name</label>
+            </p-floatLabel>
+        <!-- Small Input 2 -->
+    <p-floatLabel>
+        <input type="text" id="registerLastname" name="registerLastname" pInputText [(ngModel)]="registerLastname" 
+               #lastnameInput="ngModel" required style="width: 220px; border-radius: 8px; "
+               [ngClass]="{'invalid-input': lastnameInput.invalid && (lastnameInput.dirty || lastnameInput.touched)}">
+               <label for="name">Last Name</label>
+            </p-floatLabel>
+            </div>
+    <div style="display: flex;" *ngIf="(firstnameInput.invalid && (firstnameInput.dirty || firstnameInput.touched)) || (lastnameInput.invalid && (lastnameInput.dirty || lastnameInput.touched))">
+        <div style="font-size: small;color: red;  width: 220px;padding-right: 30px;" *ngIf="firstnameInput.errors?.['required']">
+            First Name is required.
+        </div>
+        <div style="font-size: small;color: red; width: 220px;" *ngIf="lastnameInput.errors?.['required']">
+            Last Name is required.
+        </div>
+    </div>
+<br/>
+  <!-- Email Input -->
+<p-floatLabel>
+  <input type="email" [(ngModel)]="registerEmail" name="registerEmail" required pInputText
+  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+  #registerEmailInput="ngModel" style="width: 450px; border-radius: 8px; "
+  [ngClass]="{'invalid-input': registerEmailInput.invalid && (registerEmailInput.dirty || registerEmailInput.touched)}">
+  <label for="email">Email</label>
+</p-floatLabel>
+<!-- Display error message if email is invalid -->
+<div *ngIf="registerEmailInput.invalid && (registerEmailInput.dirty || registerEmailInput.touched)">
+<div style="font-size: small;color: red;" *ngIf="registerEmailInput.errors?.['required']">
+   Email is required.
+</div>
+<div style="font-size: small;color: red;" *ngIf="registerEmailInput.errors?.['email']">
+   Please enter a valid email address.
+</div>
+<div style="font-size: small;color: red;" *ngIf="registerEmailInput.errors?.['pattern']">
+   Email must be in the format example@domain.com.
+</div>
+</div>
+<br/>
+<p-floatLabel>
+           <input type="password" style="width: 450px; border-radius: 8px;" pInputText [(ngModel)]="registerPassword" name="registerPassword" #signupPasswordInput="ngModel" minlength="8" required
+            [ngClass]="{'invalid-input': signupPasswordInput.invalid && (signupPasswordInput.dirty || signupPasswordInput.touched)}">
+            <label for="password">Password</label>
+        </p-floatLabel>
+            <div *ngIf="signupPasswordInput.invalid && (signupPasswordInput.dirty || signupPasswordInput.touched)">
+                <div style="font-size: small;color: red;" *ngIf="signupPasswordInput.errors?.['required']" style="font-size: small;color: red;">
+                    Password is required.
+                </div>
+                <div style="font-size: small;color: red;" *ngIf="signupPasswordInput.errors?.['minlength']"  style="font-size: small;color: red;">
+                    Password must be at least 8 characters long.
+                </div>
+            </div>
+            <button [disabled]="signupForm.invalid" [ngClass]="{'invalid-button': usernameTaken||(signupUsernameInput.invalid && (signupUsernameInput.dirty || signupUsernameInput.touched))||(signupPasswordInput.invalid && (signupPasswordInput.dirty || signupPasswordInput.touched))||(firstnameInput.invalid && (firstnameInput.dirty || firstnameInput.touched))||(lastnameInput.invalid && (lastnameInput.dirty || lastnameInput.touched))||(registerEmailInput.invalid && (registerEmailInput.dirty || registerEmailInput.touched))}">Sign Up</button>
+
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form #loginForm="ngForm" (submit)="login()">
+			<h1>Sign in</h1>
+			<span>or use your account</span>
+            <br/>
+            <div style="font-size:medium;color: red;">{{this.existl}}</div>
+            <br/>
+            <p-floatLabel>
+            <input type="text" id="name" pInputText name="loginUsername"  [(ngModel)]="loginUsername" 
+           #loginUsernameInput="ngModel" minlength="4" required style="width: 450px; border-radius: 8px;"
+           [ngClass]="{'invalid-input': loginUsernameInput.invalid && (loginUsernameInput.dirty || loginUsernameInput.touched)}">
+          
+           <label for="username">Username</label>
+</p-floatLabel>
+    <!-- Display error message if username is invalid -->
+    <div *ngIf="loginUsernameInput.invalid && (loginUsernameInput.dirty || loginUsernameInput.touched)">
+        <div *ngIf="loginUsernameInput.errors?.['required']"  style="font-size: small;color: red;">
+            Username is required.
+        </div>
+        <div *ngIf="loginUsernameInput.errors?.['minlength']"  style="font-size: small;color: red;">
+            Username must be at least 4 characters long.
+        </div>
+    </div>
+<br/>
+<p-floatLabel>
+    <input type="password" id="password" name="loginPassword" pInputText [(ngModel)]="loginPassword" 
+           #loginPasswordInput="ngModel" minlength="8" required style="width: 450px; border-radius: 8px; "
+           [ngClass]="{'invalid-input': loginPasswordInput.invalid && (loginPasswordInput.dirty || loginPasswordInput.touched)}">
+           <label for="loginPasswordInput">Password</label>
+        </p-floatLabel>
+    <!-- Display error message if password is invalid -->
+    <div *ngIf="loginPasswordInput.invalid && (loginPasswordInput.dirty || loginPasswordInput.touched)">
+        <div *ngIf="loginPasswordInput.errors?.['required']" style="font-size: small;color: red;">
+            Password is required.
+        </div>
+        <div *ngIf="loginPasswordInput.errors?.['minlength']"  style="font-size: small;color: red;">
+            Password must be at least 8 characters long.
+        </div>
+    </div>
+			
+            <button [disabled]="loginForm.invalid" [ngClass]="{'invalid-button': (loginUsernameInput.invalid && (loginUsernameInput.dirty || loginUsernameInput.touched))||(loginPasswordInput.invalid && (loginPasswordInput.dirty || loginPasswordInput.touched))}">Sign In</button>
+		</form>
+	</div>
+    <div class="overlay-container">
+        <div class="overlayy">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>To keep connected with us please login with your personal info</p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</body>

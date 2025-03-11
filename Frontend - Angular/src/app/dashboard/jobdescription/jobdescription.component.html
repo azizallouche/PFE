@@ -1,0 +1,77 @@
+<button style="padding-bottom: 20px;" (click)="change()"><i class="fa fa-arrow-left fa-2x" style="color: cornflowerblue;"  aria-hidden="true"></i></button>
+
+
+  <section class="section"  style="padding-left:150px ;">
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Table of Jobs</h5>
+
+            <!-- Table with stripped rows -->
+            <p-table #dt class="p-table" [value]="paginatedJobs" [rows]="rowsPerPage" [totalRecords]="totalRecords"
+            [rowsPerPageOptions]="[10, 20, 30]" [responsive]="true" [resizableColumns]="true" [reorderableColumns]="true"
+            (onPage)="onPageChange($event)">
+            <ng-template pTemplate="header">
+              <tr>
+                <th pSortableColumn="title" class="p-table-header">
+                  Job Title
+                </th>
+                <th pSortableColumn="overview" class="p-table-header">
+                   Username
+                </th>
+                <th pSortableColumn="description" class="p-table-header">
+                  User
+                </th>
+                <th pSortableColumn="experience" class="p-table-header">
+                  User Mail
+                </th>
+                <th pSortableColumn="work_level" class="p-table-header">
+                  Personality
+                </th>
+                <th pSortableColumn="employee_type" class="p-table-header">
+                  Score
+                </th>
+              </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-job class="p-table-body">
+              <tr style="padding-bottom: 10px;">
+                <td>{{ job.job_title }}</td>
+                <td>{{ job.username }}</td>
+                <td>{{ job.nom }}&nbsp;{{ job.prenom }}</td>
+                <td>{{ job.email }}</td>
+                <td  ><span *ngIf="!job.color" style=" width: 122px;height: 32px;color:#2d86ba;border-radius: 30px;background-color:#ceecfd;font-size: 15px;display: flex; padding-top: 5px; padding-left: 45px;">{{ job.personality }}</span>
+                <span *ngIf="job.color" style=" width: 122px;height: 32px;color:#13854e;border-radius: 30px;background-color:#d6ede2;font-size: 15px;display: flex; padding-top: 5px; padding-left: 45px;">{{ job.personality }}</span></td>
+                <td style="overflow: visible;">
+                    <div class="star-rating">
+                        <span class="star" *ngFor="let _ of getFullStarsArray(job.score)"
+                          ><i class="fa fa-star"></i
+                        ></span>
+                        <span class="half-star" *ngIf="hasHalfStar(job.score)"
+                          ><i class="fa fa-star-half-o"></i
+                        ></span>
+                        <span class="empty-star" *ngFor="let _ of getEmptyStarsArray(job.score)"
+                          ><i class="fa fa-star-o"></i
+                        ></span>
+                      </div>
+                   </td>
+              </tr>
+            </ng-template>
+          </p-table>
+          
+              
+            <p-paginator
+              [rows]="rowsPerPage"
+              [totalRecords]="totalRecords"
+              (onPageChange)="onPageChange($event)"
+              [rowsPerPageOptions]="[10, 20, 30]"
+              styleClass="paginator"
+            />
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>

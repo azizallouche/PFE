@@ -1,0 +1,53 @@
+
+
+
+
+
+<div class="containerb">
+  
+    <div class="box1">
+      
+        <button (click)="showQuestionnaire('mbti')" class="job-card" style="width: 400px;background-color: #fff;border-radius: 3px solid grey;border-color: grey; box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.1);border-radius: 15px;" >
+            <div *ngIf="!mbtipassed" style=" width: 122px;height: 32px;color:#2d86ba;border-radius: 30px;background-color:#ceecfd;font-size: 13px;display: flex; padding-top: 5px; padding-left: 13px;">Not Passed Yet</div>
+            <div *ngIf="mbtipassed" style=" width: 70px;height: 32px;color:#13854e;border-radius: 30px;background-color:#d6ede2;font-size: 13px;display: flex; padding-top: 5px; padding-left: 13px;">Passed</div>
+
+            <div class="job-card-header" style="margin-top: 2px;">
+              
+                
+               </div>
+            <div class="job-card-title" style="font-size: 24px; padding-top: 2px;">MBTI Test</div>
+            <div class="job-card-subtitle" style="font-size: medium;margin-bottom: 20px;">
+              psychologic test
+           </div>
+            <div class="job-detail-buttons" style="margin-top: 10px;">
+              <button class="search-buttons detail-button" style="font-size: 13px;">8 to 12 questions</button>
+              <button class="search-buttons detail-button" style="font-size: 13px;">Q&A Questions</button>
+              
+            </div>
+           
+            </button><br/>
+        
+            <button (click)="showQuestionnaire('big5')" class="job-card" style="width: 400px; margin-top:20px;background-color: #fff;border-radius: 1px solid grey;box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.1);border-radius: 15px;" >
+                <div *ngIf="!big5passed" style=" width: 122px;height: 32px;color:#2d86ba;border-radius: 30px;background-color:#ceecfd;font-size: 13px;display: flex; padding-top: 5px; padding-left: 13px;">Not Passed Yet</div>
+                <div *ngIf="big5passed" style=" width: 70px;height: 32px;color:#13854e;border-radius: 30px;background-color:#d6ede2;font-size: 13px;display: flex; padding-top: 5px; padding-left: 13px;">Passed</div>
+       <div class="job-card-header" style="margin-top: 2px;">
+                  
+                    
+                   </div>
+                <div class="job-card-title" style="font-size: 24px; padding-top: 2px;">Big5 Test</div>
+                <div class="job-card-subtitle" style="font-size: medium;margin-bottom: 20px;">
+                  psychologic test
+               </div>
+                <div class="job-detail-buttons" style="margin-top: 10px;">
+                  <button class="search-buttons detail-button" style="font-size: 13px;">50 questions</button>
+                  <button class="search-buttons detail-button" style="font-size: 13px;">choices Questions</button>
+                  
+                </div>
+               
+                </button>
+    </div>
+    <div class="box2">
+        <app-questionnaire *ngIf="showQuestionnaire1"  ></app-questionnaire>
+        <app-questionnaire2 *ngIf="showQuestionnaire2"></app-questionnaire2>
+    </div>
+  </div>

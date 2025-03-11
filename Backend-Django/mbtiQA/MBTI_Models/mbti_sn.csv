@@ -1,0 +1,61 @@
+index,Row,Questions / Types,INFJ,INFP,ENFP,ENFJ,INTJ,INTP,ENTP,ENTJ,ISFJ,ISFP,ESFP,ESFJ,ISTJ,ISTP,ESTP,ESTJ,types,count
+0,1,Do abstract concepts and ideas excite you?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+2,3,Are you more of a visionary than a detail-oriented person?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+3,4,Do you appreciate the intricacies that others may overlook?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,S/N,8
+4,5,"Do you enjoy spotting patterns, such as in human behavior, leading to an interest in social psychology?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,No,Yes,Yes,S/N,8
+5,6,Are you prone to deep diving into subjects that capture your interest?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,S/N,8
+16,17,Are you known for devising unique solutions to problems that others might not consider?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,No,No,Yes,Yes,No,S/N,8
+20,21,Do you enjoy breaking down complex theories into their foundational principles for better understanding?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,S/N,8
+21,22,Would you rather create an original work than replicate others’ creations?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,S/N,8
+30,31,Are you more interested in understanding complex systems and how they could be improved?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,S/N,8
+31,32,Do you seek to understand the universal laws and principles that govern reality?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,Yes,No,No,No,S/N,8
+44,45,Do you often understand the underlying patterns and meanings behind information without needing to be explicitly told?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,No,No,S/N,8
+49,50,"Are you inclined to contemplate the future implications of current actions, especially considering how they align with your vision or ideals?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,Yes,S/N,8
+58,59,"Do you prefer discussing abstract concepts, such as the meaning of life, rather than practical, everyday details?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+66,67,Do you tend to seek out overarching patterns and frameworks when trying to understand the world around you?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,Yes,No,No,Yes,S/N,8
+71,72,"Do you consistently seek deeper meanings and connections in the external world, often considering how things fit into a larger scheme?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,No,No,No,No,S/N,8
+73,74,Do you often find yourself envisioning how things will unfold far into the future with great detail?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+81,82,"When you reflect on your past experiences, do you often think about what they mean for the future rather than how they made you feel in the moment?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,No,Yes,Yes,S/N,8
+129,130,Is it critical for you to align your actions with a larger purpose or vision?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,S/N,8
+131,132,Do you prefer to think about the future possibilities of a situation over the present reality?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+176,177,Do you often think about the future and how your actions will affect it?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,No,No,Yes,S/N,8
+178,179,"Do you often think about humanity's future, and the role you play in it?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,No,No,No,Yes,S/N,8
+186,187,"Do you habitually look for potential outcomes and different perspectives, even in situations that seem mundane or already resolved?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+190,191,Do you tend to understand complex issues and problems by looking at the big picture rather than focusing on specifics?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+191,192,Do you often think about potential future outcomes and how today's actions will affect them?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,Yes,No,No,Yes,S/N,8
+193,194,"Do you tend to see ""the big picture"" more than the specific details?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+194,195,Do you often think about different scenarios of what the future could hold?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+195,196,"Do you find yourself lost in thought, planning or thinking deeply about concepts?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+224,225,Do you prefer understanding the underlying principle behind things rather than just accepting them at face value?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,No,S/N,8
+230,231,Do you generally seek to find underlying principles or reasons behind things you encounter in your day-to-day life?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,No,Yes,S/N,8
+234,235,"When faced with a problem, do you tend to deconstruct it into individual components for clarity and understanding?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,No,Yes,S/N,8
+256,257,"Do you often explore multiple possible interpretations or outcomes when presented with a new idea, situation, or problem?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,Yes,No,No,S/N,8
+257,258,"Do you generate new ideas or solutions spontaneously, even when not actively thinking about the problem?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+258,259,"Do you enjoy discussions or activities that involve hypothetical scenarios, brainstorming, or abstract concepts?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+259,260,Do you typically pull from a broad range of ideas or references when solving problems or making decisions?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,No,Yes,Yes,No,S/N,8
+260,261,"Are you naturally inclined towards perceiving patterns, connections, or possibilities that others often overlook?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+261,262,Do you often see the potential and possibilities that others tend to overlook?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,Yes,Yes,No,S/N,8
+263,264,Do you often think about how things could be different in the future?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+264,265,"Do you enjoy discussions or debates that revolve around theories, concepts, or ideas, even if they don't have any bearing on the current reality?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+265,266,Do you often connect unrelated observations or facts to form a bigger picture or concept?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+271,272,Do you often explore various potential outcomes before settling on a decision?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,No,Yes,S/N,8
+272,273,Does your thinking process involve creating and considering a multitude of possible scenarios?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+273,274,"Do you frequently get excited about ideas, potentials, or possibilities in conversations or tasks?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,No,No,No,No,S/N,8
+275,276,Do you often perceive patterns or connections between seemingly unrelated information or concepts?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+287,288,Do you enjoy thinking deep thoughts about societal issues and seeking out underlying patterns and meanings?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+300,301,"Are you more comfortable conversing about abstract concepts and personal philosophies rather than concrete, factual topics, and do you find small talk unfulfilling?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+303,304,"Would you say that you frequently seek out new experiences, ideas, or viewpoints different to your own?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,No,No,No,Yes,No,S/N,8
+306,307,Do you prefer discussing abstract concepts rather than mundane day-to-day activities?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+313,314,Do you prefer future-oriented discussions or ideation sessions over reminiscing about the past?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,S/N,8
+334,335,Do you feel more inspired than drained by spending time thinking about the unknown or the future?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+351,352,Do you enjoy analyzing and refining your mental models?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,No,Yes,S/N,8
+359,360,Do you prefer to focus on the big picture and the overall goal?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,Yes,S/N,8
+364,365,Are you interested in possibilities beyond what is already known?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,Yes,Yes,No,S/N,8
+366,367,"Are you open-minded, curious, and insightful?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,S/N,8
+373,374,Do you have a wide variety of interests?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,S/N,8
+385,386,"Are you interested in possibilities beyond what is already obvious, and in the ways these possibilities might affect others?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+387,388,Do you enjoy brainstorming new ideas and pushing for change?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,No,No,No,Yes,No,S/N,8
+405,406,Do you enjoy speculative and imaginative activities?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,No,No,No,No,No,S/N,8
+413,414,Do you prefer to focus on the big picture rather than the details?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,No,No,No,No,No,S/N,8
+427,428,Are you curious about the world around you and enjoy learning new things?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,S/N,8
+459,460,Do you apply your past experiences to your present decisions?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,S/N,8

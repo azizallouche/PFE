@@ -1,0 +1,86 @@
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+
+ <div class="blog-slider "  style=" margin: 0px;padding-right: 0px;margin-right: 0px;padding-left: 0px; margin-top:40px;height:600px; min-width: 1300px;display: flex;" >
+    <div class="container">
+        <div class="text">
+           Add Job
+        </div>
+        <form (ngSubmit)="onSubmit()" #jobForm="ngForm" (keydown.enter)="preventEnterKey($event)">
+            <div class="form-row">
+              <div class="input-data">
+                <input type="text" required [(ngModel)]="jobTitle" name="jobTitle">
+                <div class="underline"></div>
+                <label for="jobTitle">Job Title</label>
+              </div>
+            </div>
+          
+            <div class="form-row">
+              <div class="input-data" style="width: 350px;border-color: black;">
+                <p-dropdown 
+                  [options]="experiences" 
+                  [(ngModel)]="selectedExperienceLevel" 
+                  placeholder="Select experience level"  
+                  [style]="{'width': '350px','border-color': 'rgb(176, 158, 158)'}"
+                  name="experienceLevel">
+                </p-dropdown>
+                <div class="underline"></div>
+              </div>
+              <div class="input-data">
+                <p-dropdown 
+                  [options]="types" 
+                  [(ngModel)]="selectedWorkType" 
+                  placeholder="Select Type of Work"  
+                  [style]="{'width': '350px','border-color': 'rgb(176, 158, 158)'}"
+                  name="workType">
+                </p-dropdown>
+                <div class="underline"></div>
+              </div>
+              <div class="input-data">
+                <p-dropdown 
+                  [options]="levels" 
+                  [(ngModel)]="selectedWorkLevel" 
+                  placeholder="Select Work level"  
+                  [style]="{'width': '350px','border-color': 'rgb(176, 158, 158)'}"
+                  name="workLevel">
+                </p-dropdown>
+                <div class="underline"></div>
+              </div>
+            </div>
+          
+            <div class="form-row">
+              <div class="input-data textarea">
+                <textarea rows="8" cols="80" required [(ngModel)]="overview" name="overview"></textarea>
+                <div class="underline"></div>
+                <label for="overview">Overview</label>
+              </div>
+            </div>
+          
+            <div class="form-row containerr" style="margin-top: 20px;">
+              <div class="input-data left-div" style="width: 350px;border-color: black;">
+                <input type="text" [(ngModel)]="newMessage" name="newMessage" (keyup.enter)="onEnter($event)" required>
+                <div class="underline"></div>
+                <label for="newMessage">Job Description</label>
+              </div>
+              <div class="input-data right-div" style="height: 450px;width: 700px;border-color: black; border-width: 2;">
+                <span *ngFor="let message of messages; let i = index" class="message-item" style="align-items: center;border-bottom: 1px solid grey; padding: 5px; margin: 5px;margin-bottom: 18px;">
+                  <span>{{ message }}</span> 
+                  <i class="material-icons button delete" (click)="deleteMessage(i)">delete</i>
+                </span>
+              </div>
+            </div>
+          
+            <button type="submit" class="btn btn-lg btn-primary btn-block" style="width: 150px;height: 40px;background-color: #0d6efd;text-align: center;margin-left: 450px;">Next</button>
+          </form>
+          
+        </div>
+    
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>

@@ -1,0 +1,20 @@
+.containerb {
+    display: flex; /* Use flexbox for layout */
+  }
+
+  .box1 {
+    width: 20%; /* Each box takes 50% of the container width */
+    padding: 20px;
+   
+    margin: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  .box2 {
+    width: 80%; /* Each box takes 50% of the container width */
+    padding: 20px;
+   
+    margin: 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  

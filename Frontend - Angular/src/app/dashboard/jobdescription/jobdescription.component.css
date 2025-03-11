@@ -1,0 +1,24 @@
+.star-rating {
+  display: inline-block !important;
+}
+
+.star,
+.half-star,
+.empty-star {
+  display: inline-block !important;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.star i,
+.half-star i {
+  color: #dea103;
+  font-size: 16px;
+}
+
+.empty-star i {
+  color: #dea103;
+  border-color:#dea103 ;
+  font-size: 16px;
+}

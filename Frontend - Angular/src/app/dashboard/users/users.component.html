@@ -1,0 +1,57 @@
+
+
+  <section class="section" style="padding-left:150px ;">
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Table of Users</h5>
+
+            <!-- Table with stripped rows -->
+            <p-table #dt class="p-table" [value]="paginatedUsers"  [rows]="rowsPerPage" [totalRecords]="totalRecords" (onPage)="onPageChange($event)" [rowsPerPageOptions]="[10, 20, 30]" [responsive]="true" [resizableColumns]="true" [reorderableColumns]="true">
+                <ng-template pTemplate="header">
+                  <tr>
+                    <th pSortableColumn="username" class="p-table-header">
+                      UserName
+                    </th>
+                    <th pSortableColumn="first_name" class="p-table-header">
+                      First Name
+                    </th>
+                    <th pSortableColumn="last_name" class="p-table-header">
+                      Last Name
+                    </th>
+                    <th pSortableColumn="email" class="p-table-header">
+                      Email
+                    </th>
+                    <th pSortableColumn="type" class="p-table-header">
+                      Type
+                    </th>
+                  </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-user class="p-table-body">
+                  <tr>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.first_name }}</td>
+                    <td>{{ user.last_name }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.type }}</td>
+                  </tr>
+                </ng-template>
+                
+              </p-table>
+              
+            <p-paginator
+              [rows]="rowsPerPage"
+              [totalRecords]="totalRecords"
+              (onPageChange)="onPageChange($event)"
+              [rowsPerPageOptions]="[10, 20, 30]"
+              styleClass="paginator"
+            />
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>

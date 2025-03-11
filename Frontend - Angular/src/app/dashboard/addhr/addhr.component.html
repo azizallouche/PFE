@@ -1,0 +1,71 @@
+
+
+<section class="section" style="padding-left:150px ;">
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="card">
+          <div class="card-body">
+            <div class="container m-2">
+                <h2 style="padding-top: 10px;" >
+                  Create Human Resources
+                </h2>
+                <form (ngSubmit)="onSubmit()" #jobForm="ngForm" (keydown.enter)="preventEnterKey($event)">
+                    <div class="form-row">
+                      <div class="input-data">
+                        <input type="text" required [(ngModel)]="email" name="Usermail">
+                        <div class="underline"></div>
+                        <label for="Usermail">User Email</label>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-data">
+                          <input type="text" required [(ngModel)]="username" name="usename">
+                          <div class="underline"></div>
+                          <label for="username">Username</label>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="input-data">
+                          <input type="text" required [(ngModel)]="firstname" name="firstname">
+                          <div class="underline"></div>
+                          <label for="firstname">Firstname</label>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="input-data">
+                          <input type="text" required [(ngModel)]="lastname" name="lastname">
+                          <div class="underline"></div>
+                          <label for="lastname">Lastname</label>
+                        </div>
+                      </div>
+                 
+                    
+                  
+                   
+                  
+                    <button type="submit" class="btn btn-lg btn-primary btn-block" style="width: 150px;height: 40px;background-color: #0d6efd;text-align: center;margin-left: 370px;" (click)="openpop()">Add</button>
+                  </form>
+                  
+                </div>
+         
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div class="custom-model-main model-open" *ngIf="vis">
+    <div class="custom-model-inner">        
+    <div class="close-btn" (click)="closepop()">×</div>
+        <div class="custom-model-wrap">
+            <div class="pop-up-content-wrap">
+               <h4>Human Resources</h4>
+               <b>Username: </b>{{username1}}<br>
+               <b>Password: </b>{{password}}
+            </div>
+        </div>  
+    </div>  
+    <div class="bg-overlay"></div>
+</div> 

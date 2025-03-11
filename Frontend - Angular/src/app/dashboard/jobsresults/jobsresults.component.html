@@ -1,0 +1,36 @@
+<div class="main-container" *ngIf="!showdesc" style="height: 730px;  overflow: scroll;  ">
+  
+    <div class="searched-jobs">
+     <div class="searched-bar">
+      <div class="searched-show" style="font-size: 25px;">Showing {{num}} Jobs</div>
+     </div>
+     <div class="job-cards">
+         <div class="job-card" *ngFor="let job of jobs">
+             <div class="job-card-header" style="margin-top: 6px;">
+                <img src="assets/img/logo.png"  width="80" height="40"/>
+                
+                </div>
+             <div class="job-card-title" style="font-size: 24px; padding-top: 10px;">{{ job.title }}</div>
+             <div class="job-card-subtitle" style="font-size: medium;height: 80px;margin-bottom: 20px;">
+              {{ job.overview | slice:0:150 }}{{ job.overview.length > 200 ? '...' : '' }}
+
+            </div>
+             <div class="job-detail-buttons" style="margin-top: 10px;">
+               <button class="search-buttons detail-button" style="font-size: 13px;">{{ job.employee_type }}</button>
+               <button class="search-buttons detail-button" style="font-size: 13px;">{{ job.experience }}</button>
+               <button class="search-buttons detail-button" style="font-size: 13px;">{{ job.work_level }}</button>
+             </div>
+             <div class="job-card-buttons" >
+              <button class="search-buttons card-buttons a" style="font-size: 16px;"  (click)="apply(job.id)">See details</button>
+             </div>
+            </div>
+           
+            
+     
+    
+     </div>
+    
+    </div>
+   </div>
+
+   <app-jobdescription [idJob]="idJob"  *ngIf="showdesc" ></app-jobdescription>

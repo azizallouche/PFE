@@ -1,0 +1,293 @@
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+    <script src="https://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		/>
+   
+		<!-- Google Material Icons -->
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<!-- Custom Style Sheet -->
+
+
+		<title>Quiz App!</title>
+	
+	</head>
+	<div onload="chkUser()">
+		<div class="blog-slider" style="height:600px; min-width: 900px;">
+			<!-- The Form -->
+		
+			<!-- The Form -->
+		
+
+			<!-- Quiz Starts Here -->
+			<section id="theQuiz">
+				<form id="quizForm" onsubmit="return false;">
+					<h2 style="padding-bottom: 20px;">Psychological Test</h2>
+
+					<div id="steps" style="text-align:center;padding-bottom: 30px; ">
+						<span class="step active"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <br/>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step" ></span>
+            
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            
+					</div>
+
+					<hr />
+					<!-- One "tab" for each step in the form: -->
+					<div id="tab">
+						<p id="que" style="display: flex;justify-content: center;align-items: center;padding-bottom: 30px;padding-bottom: 30px;padding-top: 35px;height: 70px;font-size: 20px;">---Question---</p>
+						<hr />
+            <div style="padding-top: 50px;padding-left: 105px; " >
+	
+              <label class="">Strongly Agree</label>
+            <input type="radio"id="opt5" name="q" value="5" [(ngModel)]="selectedValue" class="strong-aggree " style="margin-left: 30px;margin-right: 20px;" />
+            
+                <input type="radio"id="opt4" name="q" value="4" [(ngModel)]="selectedValue" class="aggree " style="margin-right: 20px;"/>
+          
+          <input type="radio"id="opt3" name="q" value="3" [(ngModel)]="selectedValue" class="intermediate" style="margin-right: 20px;" />
+            
+          <input type="radio"id="opt2" name="q" value="2" [(ngModel)]="selectedValue" class="disagree" style="margin-right: 20px;"/>
+             
+          <input type="radio"id="opt1" name="q" value="1" [(ngModel)]="selectedValue" class="strong-disagree" style="margin-right: 30px;"/>
+          <label class="">yes</label>
+            </div>	
+					</div>
+
+					<div style="overflow:auto;">
+						<div style="float:right;">
+							<button
+								type="button"
+								
+								class="btn btn-info mb-2"
+								id="next-button"
+								[disabled]="!selectedValue"
+								(click)="next();"
+							>
+								Next
+							</button>
+						</div>
+					</div>
+				</form>
+			</section>
+
+			<!-- The Result -->
+			<section id="theResult" >
+				<div style="font-size: 25px; margin-top:10px;"><b>Dimensions</b></div>
+				<div id="containerBars">
+						<div style="display: flex;flex-wrap: wrap;gap: 10px;">
+  
+					<div id="bar-1" class="bar-main-container azure" style="width: 230px; ">
+					  <div class="wrap">
+						<div  id="perc" class="bar-percentage" >{{this.E}} %</div>
+						
+					  </div>
+					  <span style="font-size:16px;"><b>Extraversion</b></span>
+					</div>
+					
+					<div id="bar-2" class="bar-main-container emerald" style="width: 230px;">
+					  <div class="wrap">
+						<div class="bar-percentage" >{{this.A}} %</div>
+						
+					  </div>
+					  <span style="font-size:16px;"><b>Agreeableness</b></span>
+					</div>
+					
+					<div id="bar-3" class="bar-main-container violet" style="width: 230px;">
+					  <div class="wrap">
+						<div class="bar-percentage" >{{this.O}} %</div>
+						
+					  </div>
+					  <span style="font-size:16px;"><b>Openness</b></span>
+					</div>
+					
+					<div id="bar-4" class="bar-main-container yellow" style="width: 230px;">
+					  <div class="wrap">
+						<div class="bar-percentage" >{{this.N}} %</div>
+						
+					  </div>
+					  <span style="font-size:16px;"><b>Neuroticism</b></span>
+					</div>
+					
+					<div id="bar-5" class="bar-main-container red" style="width: 230px;">
+					  <div class="wrap">
+						<div class="bar-percentage" >{{this.C}} %</div>
+						
+					  </div>
+					  <span style="font-size:16px;"><b>Conscientiousness</b></span>
+					</div>
+					
+				  </div>
+				</div>
+				  <div style="font-size: 25px; margin-top:10px;"><b>Infos</b></div>
+				 
+    <div class="blog-card">
+		<input type="radio" name="select" id="tap-1" style="display:none" checked>
+						<input type="radio" name="select" style="display:none" id="tap-2">
+						<input type="radio" name="select" style="display:none" id="tap-3">
+						<input type="radio" name="select" style="display:none" id="tap-4">
+						<input type="radio" name="select" style="display:none" id="tap-5">
+						<input type="checkbox" style="display:none" id="imgTap">
+		 
+		  <div class="sliders" style="height: 20px;padding-top: 30px;">
+			<label for="tap-1" class="tap tap-1"></label>
+			<label for="tap-2" class="tap tap-2"></label>
+			<label for="tap-3" class="tap tap-3"></label>
+			<label for="tap-4" class="tap tap-4"></label>
+			<label for="tap-5" class="tap tap-5"></label>
+		  </div>
+	<div class="inner-part" >
+			<label for="imgTap" class="img">
+			  <img class="img-1" src="assets/img/extraversion.png">
+			</label>
+			<div class="content content-1" >
+			  
+				<h1 class="" style="color:white">
+					Extroversion</h1>
+					
+	<div  style="display: flex;gap: 10px;">
+        <label class="rounded-button" ><b style="font-size: large;">Positive</b><br/>outgoing, energetic<br/>enjoy social interactions<br/>positive emotions<br/>enthusiastic and assertive<br/>extensive social networks</label>
+		<label class="rounded-button" style=" background-color: #e7a59a;"><b style="font-size: large;">Negative</b><br/>may act impulsively and seek immediate pleasure<br/>may become bored easily<br/>require constant social activity and stimulation</label>
+
+    </div>
+			</div>
+			
+	</div>
+	
+	<div class="inner-part">
+			<label for="imgTap" class="img">
+			  <img class="img-2" src="assets/img/agrreableness.png">
+			</label>
+			<div class="content content-2">
+				<h1 class="" style="color:white">
+					Agreeableness</h1>
+					
+	<div  style="display: flex;gap: 10px;">
+        <label class="rounded-button" ><b style="font-size: large;">Positive</b><br/> Kind, empathetic, and considerate<br/>Cooperative and enjoy helping others<br/>Trust others and build strong, positive relationships</label>
+		<label class="rounded-button" style=" background-color: #e7a59a;"><b style="font-size: large;">Negative</b><br/>Struggle to set boundaries<br/>Susceptible to being taken advantage of<br/>Might struggle with being assertive or standing up for themselves</label>
+
+    </div>
+			</div>
+	</div>
+	<div class="inner-part">
+			<label for="imgTap" class="img">
+			  <img class="img-3" src="assets/img/openness.png">
+			</label>
+			<div class="content content-3">
+				<h1 class="" style="color:white">
+					Openness</h1>
+					
+	<div  style="display: flex;gap: 10px;">
+        <label class="rounded-button" ><b style="font-size: large;">Positive</b><br/>Strong imagination, creativity, and a willingness to try new things<br/>Enjoy exploring new ideas<br/>More adaptable and open to change</label>
+		<label class="rounded-button" style=" background-color: #e7a59a;"><b style="font-size: large;">Negative</b><br/>Overthinking and difficulty making decisions<br/>May sometimes be perceived as unpredictable<br/>Focused on abstract ideas </label>
+
+    </div>
+			</div>
+	</div>
+	<div class="inner-part">
+		<label for="imgTap" class="img">
+		  <img class="img-4" src="assets/img/neuroticism.png">
+		</label>
+		<div class="content content-4">
+			<h1 class="" style="color:white">
+				Neuroticism</h1>
+				
+<div  style="display: flex;gap: 10px;">
+	<label class="rounded-button" ><b style="font-size: large;">Positive</b><br/>Aware of potential dangers <br/>Have a deep understanding of their own emotions and those of others<br/>Can take action and avoid negative outcomes</label>
+	<label class="rounded-button" style=" background-color: #e7a59a;"><b style="font-size: large;">Negative</b><br/>Anxiety, depression, and anger<br/>More prone to stress <br/>Focus on negative aspects of situations</label>
+
+</div>
+		</div>
+</div>
+<div class="inner-part">
+	<label for="imgTap" class="img">
+	  <img class="img-5" src="assets/img/cons.png">
+	</label>
+	<div class="content content-5">
+		<h1 class="" style="color:white">
+			Conscientiousness</h1>
+			
+<div  style="display: flex;gap: 10px;">
+<label class="rounded-button" ><b style="font-size: large;">Positive</b><br/>Reliable, organized, and responsible<br/>Goal-oriented and capable of succeed<br/>Strong self-discipline and ability to control impulses</label>
+<label class="rounded-button" style=" background-color: #e7a59a;"><b style="font-size: large;">Negative</b><br/>Can lead to perfectionism and focus on details<br/> Resistant to change<br/>may experience higher levels of stress due to their responsibilities</label>
+
+</div>
+	</div>
+</div>
+	</div>
+	
+	
+			</section>
+		</div>
+		<!-- Container End -->
+		
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	
+  </div>
+    
+
+

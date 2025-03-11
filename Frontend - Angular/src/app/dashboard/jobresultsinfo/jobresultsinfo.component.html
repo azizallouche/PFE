@@ -1,0 +1,66 @@
+<div class="pagetitle" style="position: fixed;">
+    <h1>Jobs</h1>
+    
+  </div><!-- End Page Title -->
+
+  <section class="section">
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Table of Jobs</h5>
+
+            <!-- Table with stripped rows -->
+            <p-table #dt class="p-table" [value]="paginatedJobs" [rows]="rowsPerPage" [totalRecords]="totalRecords"
+            [rowsPerPageOptions]="[10, 20, 30]" [responsive]="true" [resizableColumns]="true" [reorderableColumns]="true"
+            (onPage)="onPageChange($event)">
+            <ng-template pTemplate="header">
+              <tr>
+                <th pSortableColumn="title" class="p-table-header">
+                  Title
+                </th>
+                <th pSortableColumn="overview" class="p-table-header">
+                  Overview
+                </th>
+                <th pSortableColumn="description" class="p-table-header">
+                  Description
+                </th>
+                <th pSortableColumn="experience" class="p-table-header">
+                  Experience
+                </th>
+                <th pSortableColumn="work_level" class="p-table-header">
+                  Work Level
+                </th>
+                <th pSortableColumn="employee_type" class="p-table-header">
+                  Employee Type
+                </th>
+              </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-job class="p-table-body">
+              <tr>
+                <td>{{ job.title }}</td>
+                <td>{{ job.overview }}</td>
+                <td>{{ job.description }}</td>
+                <td>{{ job.experience }}</td>
+                <td>{{ job.work_level }}</td>
+                <td>{{ job.employee_type }}</td>
+              </tr>
+            </ng-template>
+          </p-table>
+          
+              
+            <p-paginator
+              [rows]="rowsPerPage"
+              [totalRecords]="totalRecords"
+              (onPageChange)="onPageChange($event)"
+              [rowsPerPageOptions]="[10, 20, 30]"
+              styleClass="paginator"
+            />
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>

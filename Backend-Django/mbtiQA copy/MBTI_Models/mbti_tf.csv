@@ -1,0 +1,48 @@
+index,Row,Questions / Types,INFJ,INFP,ENFP,ENFJ,INTJ,INTP,ENTP,ENTJ,ISFJ,ISFP,ESFP,ESFJ,ISTJ,ISTP,ESTP,ESTJ,types,count
+6,7,"Is maintaining peace paramount to you, to the extent of avoiding conflict?",Yes,Yes,Yes,Yes,No,Yes,No,No,Yes,Yes,Yes,Yes,Yes,No,No,No,T/F,8
+7,8,Are you skillful in mediating conflicts by understanding both sides?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,T/F,8
+8,9,Do you actively try to see things from other people's points of view?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,T/F,8
+13,14,Are you empathetic and attentive to others' emotional needs?,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+42,43,Is it essential for you to create a sense of harmony and cooperation in your social circle?,Yes,Yes,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,T/F,8
+43,44,Do you often empathize with people and find yourself acting the peacemaker in conflicts?,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+45,46,Do you find yourself deeply empathizing with others and considering their feelings and needs in your decisions?,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+46,47,"Are your personal values and morals a guiding force in your life, often leading you to advocate for causes you believe in?",Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,T/F,8
+52,53,"When helping others, are you more focused on addressing their emotional needs and establishing harmony than providing practical solutions?",Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+55,56,"When making decisions, do you primarily rely on your personal values and how you feel about the situation?",Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+57,58,Do you consider yourself a good listener who seeks to understand and empathize with others' feelings?,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,No,T/F,8
+62,63,"When engaging with people, do you often sense what they're feeling and try to adjust to maintain harmony?",Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+67,68,"In discussions, do you focus more on maintaining group harmony and understanding, even if it means not fully expressing your personal viewpoint?",Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+68,69,"When faced with a conflict, is your first instinct to address the group's needs and find a diplomatic solution?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,T/F,8
+86,87,Do you relate to situations based on how they resonate with your personal values?,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,T/F,8
+100,101,Do you often consider the common good when making decisions irrespective of your personal feelings?,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,T/F,8
+158,159,Are you more attracted to establishing and maintaining harmonious relationships than achieving personal success?,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+179,180,Do you often find yourself understanding and sympathizing with other people's feelings and emotions?,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+183,184,"Do you tend to base your decisions on personal values and how actions will affect other people, rather than pure logical analysis?",Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+196,197,"Do you often make decisions based on your personal values and how things make you feel personally, rather than on logical analysis?",Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+202,203,Do you usually make decisions based on what aligns with your internal values and morals?,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,T/F,8
+203,204,Would you say that you are highly aware of your own feelings and it’s easy for you to identify your emotional state?,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+208,209,Do you often make decisions by aligning them with your personal value system rather than a universally accepted principle?,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No,No,T/F,8
+209,210,"Is it important for you to remain true to your emotions and sentiments, even if they cannot be easily articulated or understood by others?",Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+213,214,Do you find it important to maintain traditions and rituals in your life?,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,Yes,No,No,Yes,T/F,8
+247,248,Do you often consider others' feelings when making decisions?  ,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Yes,T/F,8
+248,249,Do you tend to adjust your behavior to maintain harmony in your social environment? ,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,Yes,No,No,No,T/F,8
+249,250,"Do you naturally pick up on the emotions of those around you, and respond accordingly? ",Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+250,251,Do you get satisfaction from figuring out how to meet the needs of others empathetically?,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+253,254,Do you tend to absorb emotions from others and feel them as if they were your own?,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+254,255,"Are you highly aware and considerate of others' feelings and perspectives, sometimes even before they vocalize them?",Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+292,293,"Is your approach to solving problems usually based on how it impacts people on a personal level, rather than a logical or analytical view?",Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+293,294,"In both work and personal relationships, do you tend to focus on harmony and cooperation over competition or conflict?",Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,Yes,No,No,No,T/F,8
+295,296,"Do you feel most fulfilled when you have the opportunity to help others achieve their potential, often putting their needs ahead of your own?",Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+297,298,"When faced with group conflict, do you often find yourself prioritizing cohesion, mutual understanding, and individual feelings over winning an argument?",Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+299,300,"Do you find that you harbor a deep-rooted desire to contribute towards society's welfare, often engaging in causes that you feel might make a positive impact?",Yes,Yes,Yes,Yes,No,No,No,Yes,Yes,Yes,Yes,Yes,No,No,No,Yes,T/F,8
+324,325,Do you often consider other people's feelings and needs before making decisions?,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+328,329,Do you prioritize harmony and strive to avoid conflicts in your interpersonal relationships?,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+332,333,"Do you often take on a caregiving role within your circle, attentively supporting people around you emotionally and practically?",Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,Yes,T/F,8
+340,341,Do you prioritize positive feelings and seek out social harmony?,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+342,343,Do you treat your feelings as indicative of your own subjective state of well-being?,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,No,No,T/F,8
+349,350,Do you find it important to express your feelings authentically?,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,T/F,8
+370,371,Do you have a strong desire to contribute to the welfare of others?,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,T/F,8
+386,387,Do you read people well and are responsible and caring?,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,T/F,8
+444,445,Do you tend to express your deeply felt passions through actions rather than words?,Yes,Yes,Yes,Yes,Yes,No,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,T/F,8
+451,452,"Are you authentic, accepting of all feelings and emotions?",Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
+453,454,Do you nurture an empathetic and sensitive attitude?,Yes,Yes,Yes,Yes,No,No,No,No,Yes,Yes,Yes,Yes,No,No,No,No,T/F,8
